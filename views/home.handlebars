@@ -1,0 +1,11 @@
+<h2>Página Home</h2>
+<h4>O nome: {{user.name}} {{user.surname}} , idade: {{user.age}} anos</h4>
+<h5> {{palavra}} </h5>
+{{#if auth}}
+<p>Você está logado,<a href="./dashboard">Clique aqui</a> para acessar os sapatos góticos</p>
+{{/if}}
+{{#if  approved}}
+<p>Parabéns {{user.name}},seu cadastro foi aprovado.😊</p>
+{{else}}
+<p>{{user.surname}} Seu cadastro precisa de aprovação.🧐</p>
+{{/if}}
